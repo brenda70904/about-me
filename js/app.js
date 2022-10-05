@@ -28,18 +28,21 @@ function nameGame() {
 }
 nameGame();
 // // question 2
-let foodQuestion = prompt('I don\'tlike watermelon.').toLowerCase();
-if (foodQuestion === 'true' || foodQuestion === 't' || foodQuestion === 'yes' || foodQuestion === 'y') {
-  console.log('user enter correct answer');
-  alert(`you are CORRECT ${username} ! I don't like watermelon! Yeah I know I'm weird  lol`);
-  score++;
-} else if (foodQuestion === 'false' || foodQuestion === 'f' || foodQuestion === 'no' || foodQuestion === 'n') {
-  console.log('user enter wrong answer');
-  alert(`Bzzzz! sorry, wrong answer ${username}, I don't like watermelon! Yeah I know I'm weird`);
-} else {
-  console.log('user is not following the direction');
-  alert('you need to answer with true or false');
+function foodGame() {
+  let foodQuestion = prompt('I don\'tlike watermelon.').toLowerCase();
+  if (foodQuestion === 'true' || foodQuestion === 't' || foodQuestion === 'yes' || foodQuestion === 'y') {
+    console.log('user enter correct answer');
+    alert(`you are CORRECT ${username} ! I don't like watermelon! Yeah I know I'm weird  lol`);
+    score++;
+  } else if (foodQuestion === 'false' || foodQuestion === 'f' || foodQuestion === 'no' || foodQuestion === 'n') {
+    console.log('user enter wrong answer');
+    alert(`Bzzzz! sorry, wrong answer ${username}, I don't like watermelon! Yeah I know I'm weird`);
+  } else {
+    console.log('user is not following the direction');
+    alert('you need to answer with true or false');
+  }
 }
+foodGame();
 // // question 3
 let careerQuestion = prompt('I was working in the education field.').toLowerCase();
 if (careerQuestion === 'true' || careerQuestion === 't' || careerQuestion === 'yes' || careerQuestion === 'y') {
