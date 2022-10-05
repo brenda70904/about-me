@@ -60,18 +60,21 @@ function careerGame() {
 }
 careerGame();
 // // question 4
-let sweetQeustion = prompt('I don\'t like to drink milk tea').toLowerCase();
-if (sweetQeustion === 'true' || sweetQeustion === 't' || sweetQeustion === 'yes' || sweetQeustion === 'y') {
-  console.log('user enter wrong answer');
-  alert(`Bzzzz! sorry, wrong answer ${username}, I love milk tea! my favorite milk tea place is Happy Lemon and Young tea in Bellevue.`);
-} else if (sweetQeustion === 'false ' || sweetQeustion === 'f' || sweetQeustion === 'no' || sweetQeustion === 'n') {
-  console.log('user enter correct answer');
-  alert(`you are CORRECT ${username} ! I love milk tea! 30% sugar level with less ice. Yum! By the way, my favorite milk tea place is Happy Lemon and Young tea in Bellevue.`);
-  score++;
-} else {
-  console.log('user is not following the direction');
-  alert('you need to answer with true or false');
+function drinksGame() {
+  let sweetQeustion = prompt('I don\'t like to drink milk tea').toLowerCase();
+  if (sweetQeustion === 'true' || sweetQeustion === 't' || sweetQeustion === 'yes' || sweetQeustion === 'y') {
+    console.log('user enter wrong answer');
+    alert(`Bzzzz! sorry, wrong answer ${username}, I love milk tea! my favorite milk tea place is Happy Lemon and Young tea in Bellevue.`);
+  } else if (sweetQeustion === 'false ' || sweetQeustion === 'f' || sweetQeustion === 'no' || sweetQeustion === 'n') {
+    console.log('user enter correct answer');
+    alert(`you are CORRECT ${username} ! I love milk tea! 30% sugar level with less ice. Yum! By the way, my favorite milk tea place is Happy Lemon and Young tea in Bellevue.`);
+    score++;
+  } else {
+    console.log('user is not following the direction');
+    alert('you need to answer with true or false');
+  }
 }
+drinksGame();
 
 // // question 5
 let bugQuestion = prompt('I love bugs').toLowerCase();
