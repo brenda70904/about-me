@@ -1,11 +1,15 @@
 'use strict';
 //greeting
 let username = prompt('What\'s your name?');
-console.log(username);
-alert(`Welcome ${username} !`);
-//instruction
-alert('Let\'s play a guessing game! there will be 5 questions, let\'s see how many you can get right! Please answer the following question with true or false.');
-alert(`Are you ready? ${username}`);
+function greeting() {
+  console.log(username);
+  alert(`Welcome ${username} !`);
+  //instruction
+  alert('Let\'s play a guessing game! there will be 5 questions, let\'s see how many you can get right! Please answer the following question with true or false.');
+  alert(`Are you ready? ${username}`);
+}
+greeting();
+
 let score = 0;
 // question 1
 let nameQuestion = prompt('My name starts with J').toLowerCase();
