@@ -100,10 +100,7 @@ bug();
 alert('New game!');
 // let q6 = prompt(`1 to 10, Can you gess what number I am thinking ${username}? you have 4 chances.`);
 // let question6 = parseInt(q6);
-let answer = 4;
-let attempts = 4;
-let count = 0;
-let q6;
+
 
 // for (let i = attempts; i >= 0; i--) {
 //   if (i === attempts){
@@ -128,32 +125,39 @@ let q6;
 // if (count === attempts) {
 //   alert('The answer is 4, sorry you didn\'t guess it right');
 // }
-while (attempts > 0) {
-  if (attempts === 4) {
-    q6 = prompt(`1 to 10, Can you gess what number I am thinking ${username}? you have 4 chances.`);
-  } else { //i < 4
-    q6 = prompt('guess again');
-  }
-  let question6 = parseInt(q6);
-  if (isNaN(question6)) { // Check the type of input -- 1
-    alert('Please enter a number!');
-  } else if (question6 < answer) { // Check the value -- 2
-    alert('Too low!');
-  } else if (question6 > answer) {
-    alert('Too high!');
-  } else { // question6 === answer
-    alert(`correct! the anser is ${answer}`);
-    score++;
-    break;
-  }
-  attempts--;
-  count++;
-}
+function guessAnumber() {
+  let answer = 4;
+  let attempts = 4;
+  let count = 0;
+  let q6;
+  while (attempts > 0) {
 
-if (count === attempts) {
-  alert('The answer is 4, sorry you didn\'t guess it right');
-}
+    if (attempts === 4) {
+      q6 = prompt(`1 to 10, Can you gess what number I am thinking ${username}? you have 4 chances.`);
+    } else { //i < 4
+      q6 = prompt('guess again');
+    }
+    let question6 = parseInt(q6);
+    if (isNaN(question6)) { // Check the type of input -- 1
+      alert('Please enter a number!');
+    } else if (question6 < answer) { // Check the value -- 2
+      alert('Too low!');
+    } else if (question6 > answer) {
+      alert('Too high!');
+    } else { // question6 === answer
+      alert(`correct! the anser is ${answer}`);
+      score++;
+      break;
+    }
+    attempts--;
+    count++;
+  }
 
+  if (count === attempts) {
+    alert('The answer is 4, sorry you didn\'t guess it right');
+  }
+}
+guessAnumber();
 // question 7
 // return for game 7 final score.
 let noVeggie = ['eggplant', 'celery', 'cucumber', 'carrot', 'turnip', 'okra', 'radish']; //7
