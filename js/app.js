@@ -77,18 +77,21 @@ function drinksGame() {
 drinksGame();
 
 // // question 5
-let bugQuestion = prompt('I love bugs').toLowerCase();
-if (bugQuestion === 'true' || bugQuestion === 't' || bugQuestion === 'yes' || bugQuestion === 'y') {
-  console.log('user enter wrong answer');
-  alert(`NO! NO! NO sorry, wrong answer ${username}! I hate bugs. I scream every time I see bugs. But, as a Software developer, who likes bugs?`);
-} else if (bugQuestion === 'false' || bugQuestion === 'f' || bugQuestion === 'no' || bugQuestion === 'n') {
-  console.log('user enter correct answer');
-  alert(`you are CORRECT ${username} ! oh well, as a software engineer, who likes bugs anyway?`);
-  score++;
-} else {
-  console.log('user is not following the direction');
-  alert('you need to answer with true or false');
+function bug() {
+  let bugQuestion = prompt('I love bugs').toLowerCase();
+  if (bugQuestion === 'true' || bugQuestion === 't' || bugQuestion === 'yes' || bugQuestion === 'y') {
+    console.log('user enter wrong answer');
+    alert(`NO! NO! NO sorry, wrong answer ${username}! I hate bugs. I scream every time I see bugs. But, as a Software developer, who likes bugs?`);
+  } else if (bugQuestion === 'false' || bugQuestion === 'f' || bugQuestion === 'no' || bugQuestion === 'n') {
+    console.log('user enter correct answer');
+    alert(`you are CORRECT ${username} ! oh well, as a software engineer, who likes bugs anyway?`);
+    score++;
+  } else {
+    console.log('user is not following the direction');
+    alert('you need to answer with true or false');
+  }
 }
+bug();
 
 //question 6
 //loop over if statement
