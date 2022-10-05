@@ -44,18 +44,21 @@ function foodGame() {
 }
 foodGame();
 // // question 3
-let careerQuestion = prompt('I was working in the education field.').toLowerCase();
-if (careerQuestion === 'true' || careerQuestion === 't' || careerQuestion === 'yes' || careerQuestion === 'y') {
-  console.log('user enter correct answer');
-  alert(`you are CORRECT ${username} ! I was a preschool teacher for 4 years, and I was a Chinese tutor.`);
-  score++;
-} else if (careerQuestion === 'false' || careerQuestion === 'f' || careerQuestion === 'no' || careerQuestion === 'n') {
-  console.log('user enter wrong answer');
-  alert(`Bzzzz! sorry, wrong answer ${username}, I was a preschool teacher for 4 years,and I was a Chinese tutor.`);
-} else {
-  console.log('user is not following the direction');
-  alert('you need to answer with true or false');
+function careerGame() {
+  let careerQuestion = prompt('I was working in the education field.').toLowerCase();
+  if (careerQuestion === 'true' || careerQuestion === 't' || careerQuestion === 'yes' || careerQuestion === 'y') {
+    console.log('user enter correct answer');
+    alert(`you are CORRECT ${username} ! I was a preschool teacher for 4 years, and I was a Chinese tutor.`);
+    score++;
+  } else if (careerQuestion === 'false' || careerQuestion === 'f' || careerQuestion === 'no' || careerQuestion === 'n') {
+    console.log('user enter wrong answer');
+    alert(`Bzzzz! sorry, wrong answer ${username}, I was a preschool teacher for 4 years,and I was a Chinese tutor.`);
+  } else {
+    console.log('user is not following the direction');
+    alert('you need to answer with true or false');
+  }
 }
+careerGame();
 // // question 4
 let sweetQeustion = prompt('I don\'t like to drink milk tea').toLowerCase();
 if (sweetQeustion === 'true' || sweetQeustion === 't' || sweetQeustion === 'yes' || sweetQeustion === 'y') {
