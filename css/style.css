@@ -1,0 +1,31 @@
+body{
+  margin: 30px;
+}
+h1{
+  margin: 05px;
+  padding: 10px;
+  text-align: center;
+  font-size: 50px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+}
+h2{
+  margin: 15px;
+  padding: 10px;
+  text-align: center;
+  font-size: 40px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#bio{
+margin: 5px;
+padding: 5px;
+text-align: left;
+font-size: 20px;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#fact{
+  margin: 5px;
+  padding: 5px;
+  text-align: left;
+  font-size: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

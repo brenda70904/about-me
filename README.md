@@ -2,7 +2,7 @@
 
 ## About Me
 
-I build this app to help everyone get to know me. I am a student at Code Fellows, I am currently learning Javascript, HTML, and CSS. In the next couple of days, I will be working on this app. Feel free to contribute your idea! I would love to learn from you! :computer:
+I built this app to help everyone get to know me. I am a student at Code Fellows, I am currently learning Javascript, HTML, and CSS. In the next couple of days, I will be working on this app. Feel free to contribute your ideas! I would love to learn from you! :computer:
 
 ### Author: Brenda Jow
 
