@@ -110,7 +110,7 @@ let q6;
 // if (count === attempts) {
 //   alert('The answer is 4, sorry you didn\'t guess it right');
 // }
-while(attempts > 0){
+while (attempts > 0) {
   if (attempts === 4) {
     q6 = prompt(`1 to 10, Can you gess what number I am thinking ${username}? you have 4 chances.`);
   } else { //i < 4
@@ -152,14 +152,14 @@ for (let i = 0; i < chances; i++) {
       alert(`Yup! I don't like ${question7}! `);
       score++;
       i = chances;
-      break;
+      break; // it will only eveluate noVeggie
     }
   }
-  if (i < chances){
-    question7 = prompt('Ok, can you guess another one?');
+  if (i < chances) {
+    question7 = prompt('Can you guess another one?');
   }
 }
-alert(`here's the list of thing I don't like ${noVeggie}, Yah I am picky.`);
+alert(`Things I don't like: ${noVeggie}, Yah I am picky.`);
 if (score === 0) {
   alert(`Your total score is ${score}, Thanks for playing!`);
 } else {
