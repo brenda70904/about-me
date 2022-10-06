@@ -1,5 +1,6 @@
 'use strict';
 //greeting
+let score = 0;
 let username = prompt('What\'s your name?');
 function greeting() {
   console.log(username);
@@ -9,22 +10,23 @@ function greeting() {
   alert(`Are you ready? ${username}`);
 }
 greeting();
-
-let score = 0;
 // question 1
-let nameQuestion = prompt('My name starts with J').toLowerCase();
+function nameGame() {
+  let nameQuestion = prompt('My name starts with J').toLowerCase();
 
-if (nameQuestion === 'false' || nameQuestion === 'f' || nameQuestion === 'no' || nameQuestion === 'n') {
-  console.log('user enter correct answer');
-  alert(`you are CORRECT ${username} ! My name strts with B.`);
-  score++;
-} else if (nameQuestion === 'true' || nameQuestion === 't' || nameQuestion === 'yes' || nameQuestion === 'y') {
-  console.log('user enter wrong answer');
-  alert(`Bzzzz! sorry,wrong answer ${username}, my name starts with B.`);
-} else {
-  console.log('user is not following the direction');
-  alert('you need to answer with true or false');
+  if (nameQuestion === 'false' || nameQuestion === 'f' || nameQuestion === 'no' || nameQuestion === 'n') {
+    console.log('user enter correct answer');
+    alert(`you are CORRECT ${username} ! My name strts with B.`);
+    score++;
+  } else if (nameQuestion === 'true' || nameQuestion === 't' || nameQuestion === 'yes' || nameQuestion === 'y') {
+    console.log('user enter wrong answer');
+    alert(`Bzzzz! sorry,wrong answer ${username}, my name starts with B.`);
+  } else {
+    console.log('user is not following the direction');
+    alert('you need to answer with true or false');
+  }
 }
+nameGame();
 // // question 2
 let foodQuestion = prompt('I don\'tlike watermelon.').toLowerCase();
 if (foodQuestion === 'true' || foodQuestion === 't' || foodQuestion === 'yes' || foodQuestion === 'y') {
