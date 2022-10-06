@@ -160,28 +160,30 @@ function guessAnumber() {
 guessAnumber();
 // question 7
 // return for game 7 final score.
-let noVeggie = ['eggplant', 'celery', 'cucumber', 'carrot', 'turnip', 'okra', 'radish']; //7
+function veggie() {
+  let noVeggie = ['eggplant', 'celery', 'cucumber', 'carrot', 'turnip', 'okra', 'radish']; //7
 
-let question7 = prompt('last guessing game, let\'s see if you can guess what vegetable I don\'t like to eat, you will have 6 chances. ').toLowerCase;
-//let otherGuess = prompt('what else?');
-let chances = 7;
+  let question7 = prompt('last guessing game, let\'s see if you can guess what vegetable I don\'t like to eat, you will have 6 chances. ').toLowerCase;
+  //let otherGuess = prompt('what else?');
+  let chances = 7;
 
 
-//check if question match to list
-for (let i = 0; i < chances; i++) {
-  for (let j = 0; j < noVeggie.length; j++) {
-    if (question7 === noVeggie[j]) {
-      alert(`Yup! I don't like ${question7}! `);
-      score++;
-      i = chances;
-      break; // it will only eveluate noVeggie
+  //check if question match to list
+  for (let i = 0; i < chances; i++) {
+    for (let j = 0; j < noVeggie.length; j++) {
+      if (question7 === noVeggie[j]) {
+        alert(`Yup! I don't like ${question7}! `);
+        score++;
+        i = chances;
+        break; // it will only eveluate noVeggie
+      }
+    }
+    if (i < chances) {
+      question7 = prompt('Can you guess another one?');
     }
   }
-  if (i < chances) {
-    question7 = prompt('Can you guess another one?');
-  }
+  alert(`Things I don't like: ${noVeggie}, Yah I am picky.`);
 }
-alert(`Things I don't like: ${noVeggie}, Yah I am picky.`);
 if (score === 0) {
   alert(`Your total score is ${score}, Thanks for playing!`);
 } else {
