@@ -162,12 +162,9 @@ guessAnumber();
 // return for game 7 final score.
 function veggie() {
   let noVeggie = ['eggplant', 'celery', 'cucumber', 'carrot', 'turnip', 'okra', 'radish']; //7
-
   let question7 = prompt('last guessing game, let\'s see if you can guess what vegetable I don\'t like to eat, you will have 6 chances. ').toLowerCase;
   //let otherGuess = prompt('what else?');
-  let chances = 7;
-
-
+  let chances = 6;
   //check if question match to list
   for (let i = 0; i < chances; i++) {
     for (let j = 0; j < noVeggie.length; j++) {
@@ -184,6 +181,8 @@ function veggie() {
   }
   alert(`Things I don't like: ${noVeggie}, Yah I am picky.`);
 }
+veggie();
+
 if (score === 0) {
   alert(`Your total score is ${score}, Thanks for playing!`);
 } else {
