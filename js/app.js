@@ -12,11 +12,11 @@ function greeting() {
 greeting();
 // question 1
 function nameGame() {
-  let nameQuestion = prompt('My name starts with J').toLowerCase();
+  let nameQuestion = prompt('My first name starts with J').toLowerCase();
 
   if (nameQuestion === 'false' || nameQuestion === 'f' || nameQuestion === 'no' || nameQuestion === 'n') {
     console.log('user enter correct answer');
-    alert(`you are CORRECT ${username} ! My name strts with B.`);
+    alert(`you are CORRECT ${username} ! My name is Brenda.`);
     score++;
   } else if (nameQuestion === 'true' || nameQuestion === 't' || nameQuestion === 'yes' || nameQuestion === 'y') {
     console.log('user enter wrong answer');
@@ -27,6 +27,7 @@ function nameGame() {
   }
 }
 nameGame();
+
 // // question 2
 function foodGame() {
   let foodQuestion = prompt('I don\'tlike watermelon.').toLowerCase();
@@ -43,6 +44,7 @@ function foodGame() {
   }
 }
 foodGame();
+
 // // question 3
 function careerGame() {
   let careerQuestion = prompt('I was working in the education field.').toLowerCase();
@@ -59,6 +61,7 @@ function careerGame() {
   }
 }
 careerGame();
+
 // // question 4
 function drinksGame() {
   let sweetQeustion = prompt('I don\'t like to drink milk tea').toLowerCase();
@@ -97,7 +100,6 @@ bug();
 //loop over if statement
 //set variable for attempts
 //set if else statement for guessing game
-alert('New game!');
 // let q6 = prompt(`1 to 10, Can you gess what number I am thinking ${username}? you have 4 chances.`);
 // let question6 = parseInt(q6);
 
@@ -125,10 +127,11 @@ alert('New game!');
 // if (count === attempts) {
 //   alert('The answer is 4, sorry you didn\'t guess it right');
 // }
+alert('New game!');
 function guessAnumber() {
   let answer = 4;
   let attempts = 4;
-  let count = 0;
+  let checker = false;
   let q6;
   while (attempts > 0) {
 
@@ -147,13 +150,12 @@ function guessAnumber() {
     } else { // question6 === answer
       alert(`correct! the anser is ${answer}`);
       score++;
+      checker = true;
       break;
     }
     attempts--;
-    count++;
   }
-
-  if (count === attempts) {
+  if (checker === false) {
     alert('The answer is 4, sorry you didn\'t guess it right');
   }
 }
@@ -162,10 +164,10 @@ guessAnumber();
 // return for game 7 final score.
 function veggie() {
   let noVeggie = ['eggplant', 'celery', 'cucumber', 'carrot', 'turnip', 'okra', 'radish']; //7
-  let question7 = prompt('last guessing game, let\'s see if you can guess what vegetable I don\'t like to eat, you will have 6 chances. ').toLowerCase;
+  let question7 = prompt('last guessing game, let\'s see if you can guess what vegetable I don\'t like to eat, you will have 6 chances. ').toLowerCase();
   //let otherGuess = prompt('what else?');
   let chances = 6;
-  //check if question match to list
+  //check if question match to 
   for (let i = 0; i < chances; i++) {
     for (let j = 0; j < noVeggie.length; j++) {
       if (question7 === noVeggie[j]) {
@@ -175,6 +177,7 @@ function veggie() {
         break; // it will only eveluate noVeggie
       }
     }
+    console.log(i);
     if (i < chances) {
       question7 = prompt('Can you guess another one?');
     }
