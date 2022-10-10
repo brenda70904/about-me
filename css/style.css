@@ -1,26 +1,29 @@
 body {
   margin: 30px;
+  border: 10px;
+  background-color: #749d9b;
 }
-
-h1 {
-  margin: 05px;
-  padding: 10px;
-  text-align: center;
-  font-size: 50px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+p{
+  border-style: outset;
+  border-radius: 10px;
+  border-color: #acba9d;
+  border-width: 10px;
+  color: #eed19c;
+  content: 15px;
 }
-
 h2 {
   margin: 15px;
   padding: 10px;
   text-align: center;
   font-size: 40px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #efb28c;
 }
 
 #bio {
-  margin: 5px;
-  padding: 5px;
+  margin: 15px;
+  padding: 15px;
+  border: 15px;
   text-align: left;
   font-size: 20px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -28,20 +31,34 @@ h2 {
 
 #fact {
   margin: 5px;
-  padding: 5px;
+  padding: 15px;
   text-align: left;
   font-size: 20px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  
 }
 
 ol{
+  margin:30px ;
   list-style: numbers ;
   font-size: 20px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #eed19c;
 }
-
+#movie{
+ margin: 10px;
+ padding: 10px;
+}
+#list{
+  border-style: outset;
+  color: #acba9d;
+}
 ul{
   list-style:circle;
   font-size: 20px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #efb28c;
+}
+li{
+  color: #eed19c;
 }
